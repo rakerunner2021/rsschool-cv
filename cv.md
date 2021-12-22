@@ -26,8 +26,10 @@ var squareSum = function (numbers) {
 return sum;
 }
 ```
+---
 ## Courses
 * htmlacademy (in process)
-![html academy progress]()
-
-  
+* RS Schools JS/FE Pre-School 2022 (in process)
+---
+## Languages
+* English Intermediate (B1) 
