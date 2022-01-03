@@ -1,0 +1,295 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+    width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.сontainer {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.section-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+    background-color: #ebebeb;
+    color: #363636;
+    padding-left: 50px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.section-title-right {
+    position: relative;
+    margin-top: 0;
+    background-color: #424753;
+    color: #ffffff;
+    padding-left: 50px;
+    width: 330px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 40px;
+    background-color: #f2c100;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.section-title-right::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 40px;
+    background-color: #f2c100;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.main-nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border-top: 1px solid #4C4E50;
+    border-bottom: 1px solid  #4C4E50;
+    background-color: #ebebeb;
+    width: 100%;
+    margin: 0;
+}
+
+.main-nav-list a {
+    text-decoration: none;
+    color: #363636;
+    font-weight: bold;
+}
+
+.main-nav-list a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.main-nav-list a:active {
+    color: #2E2D56;
+}
+
+.page-header .header-info {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.header-info .name {
+    width: 70%;   
+}
+
+.header-info .name h1 {
+    font-size: 60px;
+}
+
+.header-info .name h2 {
+    font-size: 28px;
+}
+
+.profile-photo {
+   width: 30%;
+   background-color: #ebebeb;
+}
+
+.main .container {
+    display: flex;
+}
+
+.main .left-column {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .left-column section {
+    margin-bottom: 10px;
+}
+
+.main .right-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-list,
+.skills-list {
+    list-style: none;
+    padding: 0;   
+}
+
+.right-column .contacts {
+    background-color: #343945;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.right-column .skills {
+    background-color: #2c323d;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.right-column .lang {
+    background-color: #2c323d;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.contacts-item,
+.skills-item {
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+
+.contacts-list .contacts-email {
+    background-image: url(assets/img/email.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px;  
+}
+
+.contacts-list .contacts-discord {
+    background-image: url(assets/img/discord.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px; 
+}
+
+.contacts-list .contacts-telegram {
+    background-image: url(assets/img/telegram.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px; 
+}
+
+.skills-list .skills-html {
+    background-image: url(assets/img/html.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+    background-size: 26px;
+}
+
+.skills-list .skills-css {
+    background-image: url(assets/img/css.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+    background-size: 26px;  
+}
+
+.skills-list .skills-js {
+    background-image: url(assets/img/js.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+    background-size: 26px;  
+}
+
+.skills-list .skills-git {
+    background-image: url(assets/img/git.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+    background-size: 26px;  
+}
+
+.code-example .code-js {
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+.js-violet {
+    color: #c120f1;
+}
+
+.js-orange {
+    color: #de935f;
+}
+
+.js-blue {
+    color: #19a3d1;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4C4E50;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-gh {
+   position: relative;
+}
+
+.footer-link-gh {
+    padding-left: 55px;
+    font-weight: 700;
+}
+
+.footer-link-gh::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    bottom: 0;
+    left: 0;
+    background-image: url(assets/img/icon-github.png);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}
+
+.lang p {
+    padding-left: 35px;
+    padding-right: 15px;
+}
+
+.footer-year {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ebebeb;
+}
+
+.about-me p,
+.code-example p {
+    padding-left: 30px;
+    padding-right: 5px;
+}
