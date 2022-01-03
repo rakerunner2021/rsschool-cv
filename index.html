@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandr Shilov CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#about">About me</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#contacts">Contacts</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#code">Code</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#courses">Courses</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-info">
+          <div class="name">
+            <h1 class="name-title">Alexandr Shilov</h1>
+            <h2>Novice Front-End Developer</h2>
+          </div>
+          <img
+            src="assets/img/myphoto.jpg"
+            alt="myphoto"
+            class="profile-photo"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="left-column">
+          <section class="about-me" id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+              I have always loved computers and everything related to them,
+              especially computer games, I have been selling game values for
+              several years now. I like to create something, so I chose
+              Front-end web development. I like to get new knowledge and I am
+              not afraid to put it into practice.
+            </p>
+          </section>
+          <section class="code-example" id="code">
+            <h2 class="section-title">Code examples</h2>
+            <p>
+              Complete the square sum function so that it squares each number
+              passed into it and then sums the results together. For example,
+              for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+            </p>
+            <div class="code-js">
+              <pre>
+        <code>
+            <span class="js-violet">var</span> <span class="js-orange">squareSum</span> = <span class="js-violet">function</span> (<span class="js-orange">numbers</span>) {
+                <span class="js-violet">var</span> <span class="js-orange">sum</span> = <span class="js-orange">0</span>;
+                <span class="js-violet">for</span> (<span class="js-violet">var</span> <span class="js-orange">i</span> = <span class="js-orange">0</span>; <span class="js-blue">i</span> &lt; <span class="js-blue">numbers</span>.<span class="js-blue">length</span>; i++) {
+                  <span class="js-blue">sum</span> = <span class="js-blue">sum</span> + (<span class="js-blue">numbers</span>[<span class="js-blue">i</span>] * <span class="js-blue">numbers</span>[<span class="js-blue">i</span>]);
+                  }
+              <span class="js-violet">return</span> <span class="js-blue">sum</span>;
+            }             
+        </code>
+    </pre>
+            </div>
+          </section>
+          <section class="courses" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <ul>
+              <li>HTML academy</li>
+              <li>RS Schools JS/FE Pre-School 2022 (in process)</li>
+            </ul>
+          </section>
+        </div>
+        <aside class="right-column">
+          <section class="contacts" id="contacts">
+            <h2 class="section-title-right">Contacts</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item contacts-email">
+                <b>Email</b> a.shilov34@gmail.com
+              </li>
+              <li class="contacts-item contacts-discord">
+                <b>Discord</b> Alexandr Shilov(@rakerunner2021)
+              </li>
+              <li class="contacts-item contacts-telegram">
+                <b>Telegram</b> https://t.me/AlexandrShilov34
+              </li>
+            </ul>
+          </section>
+          <section class="skills" id="skills">
+            <h2 class="section-title-right">Skills</h2>
+            <ul class="skills-list">
+              <li class="skills-item skills-html"><b>HTML</b></li>
+              <li class="skills-item skills-css"><b>CSS</b></li>
+              <li class="skills-item skills-js">JS (basic)</li>
+              <li class="skills-item skills-git">Git (basic)</li>
+            </ul>
+          </section>
+          <section class="lang">
+            <h2 class="section-title-right">English</h2>
+            <p>
+              My proficiency level is Intermediate (B1). I've had a lot of
+              practice speaking in online games.
+            </p>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-gh">
+        <a class="footer-link-gh" href="https://github.com/rakerunner2021"
+          >Me on GitHub</a
+        >
+      </div>
+      <div class="footer-year">
+        <p>2021</p>
+      </div>
+      <div class="footer-rsschool">
+        <a class="footer-link-rsschool" href="https://rs.school/js-stage0/"
+          ><img src="assets/img/rsschool.svg" alt="rsschool-logo" width="80"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
