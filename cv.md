@@ -23,7 +23,7 @@ return sum;
 }
 ```
 ## Courses
-* htmlacademy (in process)
-* RS Schools JS/FE Pre-School 2022 (in process)
+* htmlacademy 
+* RS Schools JS/FE Pre-School 2022 
 ## Languages
 * English Intermediate (B1) 
