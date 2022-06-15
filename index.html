@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/img/favicon.ico">
 </head>
+
 <body>
-  <h1>My CV</h1>
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-wrapper">
+        <div class="header-logo">
+          <img src="./assets/img/1294_oooo.plus.png" alt="my photo">
+        </div>
+        <div class="header-name">
+          <h1 class="header-title">
+            Shilov Alexandr
+          </h1>
+          <h2 class="header-subtitle">
+            <span class="subtitle-tip-frontend">Front-end </span> <span class="subtitle-tip-dev">Developer</span>
+          </h2>
+        </div>
+        <nav class="header-info">
+          <ul class="header-info-list">
+            <li class="header-info-item">
+              <a href="mailto:a.shilov34@gmail.com" class="header-info-link">a.shilov34@gmail.com</a>
+            </li>
+            <li class="header-info-item">
+              <a href="https://t.me/AlexandrShilov34" class="header-info-link">t.me/AlexandrShilov34</a>
+            </li>
+            <li class="header-info-item">
+              Alexandr Shilov(@rakerunner2021)
+            </li>
+          </ul>
+        </nav>
+        <div class="header-about-me">
+          <h2 class="about-me">
+            About me
+          </h2>
+          <p class="header-short-info">
+            I have always loved computers and everything related to them,
+            especially computer games, I have been selling game values for
+            several years now. I like to create something, so I chose
+            Front-end web development. I like to get new knowledge and I am
+            not afraid to put it into practice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="top-part">
+      <div class="container top-part-container">
+        <div class="my-education-wrapper">
+          <div class="my-education">
+            <div class="my-education-title">
+              <h2 class="section-title">Education</h2>
+            </div>
+            <div class="my-education-list">
+              <div class="my-uni">
+                <span class="my-uni-logo">Volgograd State University, linguistics</span>
+                <span class="my-uni-degree">-Bachelor's Degree</span>
+              </div>
+              <div class="my-years">2014-2018</div>
+            </div>
+          </div>
+        </div>
+        <div class="my-lang">
+          <div class="my-lang-wrapper">
+            <h2 class="section-title gray-title">
+              Languages
+            </h2>
+            <ul class="my-lang-list">
+              <li class="my-lang-item">Russian: <span class="lang-tip">(native)</span></li>
+              <li class="my-lang-item">English: <span class="lang-tip">(Intermediate B1)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="middle-part container">
+      <aside class="left-side">
+        <div class="skills">
+          <h2 class="section-title">
+            Skills
+          </h2>
+          <ul class="skills-list">
+            <li class="skills-item">
+              <p class="skills-desc">HTML</p>
+              <div class="progressbar-html">
+                <span class="line-html"></span>
+              </div>
+            </li>
+            <li class="skills-item">
+              <p class="skills-desc">CSS</p>
+              <div class="progressbar-css">
+                <span class="line-css"></span>
+              </div>
+            </li>
+            <li class="skills-item skills-js">
+              <p class="skills-desc">JS (basic)</p>
+              <div class="progressbar-js">
+                <span class="line-js"></span>
+              </div>
+            </li>
+            <li class="skills-item skills-git">
+              <p class="skills-desc">Git (basic)</p>
+              <div class="progressbar-git">
+                <span class="line-git"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="courses">
+          <h2 class="section-title">
+            Courses
+          </h2>
+          <ul class="courses-list">
+            <li class="courses-item">
+              <p class="courses-desc-year">2021</p>
+              <p class="courses-desc">HTML academy</p>
+            </li>
+            <li class="courses-item">
+              <p class="courses-desc-year">2022</p>
+              <p class="courses-desc">RS Schools JS/FE Pre-School 2022 (in process)</p>
+            </li>
+
+          </ul>
+        </div>
+      </aside>
+      <div class="right-side">
+        <div class="code-example">
+          <h2 class="section-title">
+            Code example
+          </h2>
+          <div class="code-js">
+<pre>
+  <code>
+    <span class="js-violet">var</span> <span class="js-orange">squareSum</span> = <span class="js-violet">function</span> (<span class="js-orange">numbers</span>) {
+    <span class="js-violet">var</span> <span class="js-orange">sum</span> = <span class="js-orange">0</span>;
+    <span class="js-violet">for</span> (<span class="js-violet">var</span> <span class="js-orange">i</span> = <span class="js-orange">0</span>; <span class="js-blue">i</span> &lt; <span class="js-blue">numbers</span>.<span class="js-blue">length</span>; i++) {
+    <span class="js-blue">sum</span> = <span class="js-blue">sum</span> + (<span class="js-blue">numbers</span>[<span class="js-blue">i</span>] * <span class="js-blue">numbers</span>[<span class="js-blue">i</span>]);
+    }
+    <span class="js-violet">return</span> <span class="js-blue">sum</span>;
+    }             
+  </code>
+</pre>
+          </div>
+        </div>
+        <div class="projects">
+          <h2 class="section-title">
+            Projects
+          </h2>
+          <div class="memory-game">
+            <a href="https://rakerunner2021.github.io/memory-game/" class="game-link"><img src="./assets/img/screen.JPG" alt="memory game gameplay" class="memory-img"></a>
+            <div class="memory-game-info">
+              <h3 class="memory-game-title">Memory Game</h3>
+              <h3 class="memory-game-subtitle">HTML, CSS, JS</h3>
+              <p class="memory-game-desc">The memory game is a common children's game played with a set of cards. The cards have a pictures on one side and each picture appears on two (or sometimes four) cards. The game starts with all the cards face down and players take turns to turn over two cards.</p>
+              <a href="https://rakerunner2021.github.io/memory-game/" class="button">See project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer container">
+    <div class="footer-gh">
+      <a class="footer-link-gh" href="https://github.com/rakerunner2021">Me on GitHub</a>
+    </div>
+    <div class="footer-year">
+      <p>2022</p>
+    </div>
+    <div class="footer-rsschool">
+      <a class="footer-link-rsschool" href="https://rs.school/js-stage0/"><img src="assets/img/rsschool.svg"
+          alt="rsschool-logo" width="80"></a>
+    </div>
+  </footer>
 </body>
+
 </html>
