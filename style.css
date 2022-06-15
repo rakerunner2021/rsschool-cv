@@ -1,13 +1,590 @@
+
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./assets/fonts/inter-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/inter-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('./assets/fonts/inter-v7-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/inter-v7-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* merriweather-700 - latin */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('./assets/fonts/merriweather-v28-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/merriweather-v28-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    margin: 0 auto;
+    min-height: 100vh;
+    margin: 0;
     padding: 0;
-    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #ffffff;
+    background-color: #E5E5E5;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #F3F4ED;
+}
+
+.header-container {
+      background-color: #424642;
+      border-bottom: 4px solid #C06014;
+      border-right: 4px solid #C06014;
+      border-bottom-right-radius: 300px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.header-logo {
+    margin-top: 25px;
+    padding-left: 30px;
+}
+
+.header-title {
+    font-family: 'Merriweather';
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 100px;
+    color: #F2F2F2;
+}
+
+.header-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 72px;
+    color: #ffffff;
+}
+
+.header-short-info {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 908.5px;
+    padding-left: 30px;
+    padding-top: 20px;
+    background-image: url(./assets/img/quote1.svg), url(./assets/img/quote2.svg);
+    background-repeat: no-repeat;
+    background-position: 10px top, bottom right;
+    background-size: 15px;
+}
+
+.header-info {
+    position: relative;
+}
+
+.header-info::before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 90%;
+    color: #000;
+    background-color: #828282;
+    top: 5px;
+    left: -15px;
+}
+
+.header-info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-me {
+    margin: 0;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    color: #F49696;
+    font-size: 24px;
+}
+
+.header-info-item {
+    padding-left: 45px;
+}
+
+.header-info-item:first-child {
+    background-image: url(./assets/img/mail.svg);
+    background-repeat: no-repeat;
+}
+
+.header-info-item:nth-child(2) {
+    background-image: url(./assets/img/tele.svg);
+    background-repeat: no-repeat;
+}
+.header-info-item:last-child {
+    background-image: url(./assets/img/discord.svg);
+    background-repeat: no-repeat;
+}
+
+.header-info-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-subtitle .subtitle-tip-frontend {
+    color: #6FCF97;
+}
+
+.header-subtitle .subtitle-tip-dev {
+    color: #F3E13D;
+}
+
+.top-part-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+
+.my-education {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ffffff;
-    scroll-behavior: smooth;
-    width: 1200px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#424642, #424642), linear-gradient(90deg, #424642 20px, transparent 20px, transparent 173px, #424642 173px), linear-gradient(#424642, #424642), linear-gradient(90deg, #424642 100%, transparent 25vw, transparent 40vw, #424642 40vw);
+    background-size: 4px 120px, 100% 4px, 4px 120px, 100% 4px;
+    background-position: 0 35px, 0px 35px, 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    padding: 15px;
 }
+.my-education-wrapper {
+    width: 70%;
+}
+
+.my-lang {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 15px;
+    align-self: flex-start;
+    
+}
+
+.my-lang-wrapper {
+    border-radius: 50%;
+    background-color: #C060140D;
+}
+
+.section-title {
+    margin: 0;
+    color: #C06014;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.gray-title {
+    color: #424642;
+}
+
+.my-education-list {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-weight: 700;
+}
+
+.my-education-title {
+    margin-left: 10px;
+}
+
+.my-uni {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+.my-education-list .my-uni-degree {
+    font-weight: 400;
+}
+
+.my-years {
+    padding: 10px;
+}
+
+.my-lang-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #000;
+}
+
+.my-lang-item {
+    position: relative;
+    padding-left: 18px;
+}
+
+.my-lang-item::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #C06014;
+    border-radius: 50%;
+}
+
+.middle-part {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    column-gap: 15px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    row-gap: 20px;
+    background: linear-gradient(to bottom, transparent 25px, #C060140D 25px, #C060140D);
+    
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background: linear-gradient(to bottom, transparent 25px, #C060140D 25px, #C060140D);
+}
+
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    
+}
+
+.memory-game-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: space-between;
+}
+
+.memory-img {
+    display: block;
+    height: 100%;
+}
+
+.memory-game-title,
+.memory-game-subtitle,
+.memory-game-desc {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+}
+
+.memory-game-title {
+    font-size: 18px;
+}
+
+.memory-game-subtitle {
+    color: #424642;
+}
+
+.button {
+    display: block;
+    width: 40%;
+    text-align: center;
+    background-color: #C06014;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 7px;
+    
+}
+
+.code-example,
+.projects {
+    padding-left: 25px;
+}
+
+.code-example {
+    background-image: linear-gradient(#424642, #424642), linear-gradient(90deg, #424642 20px, transparent 20px, transparent 223px, #424642 223px), linear-gradient(#424642, #424642), linear-gradient(90deg, #424642 100%, transparent 25vw, transparent 40vw, #424642 40vw);
+    background-size: 2px 335px, 100% 2px, 2px 335px, 100% 2px;
+    background-position: 0 25px, 0px 25px, 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+pre {
+    margin: 0;
+}
+
+.code-js {
+    color: #000;
+}
+
+.js-violet {
+    color: #c120f1;
+}
+
+.js-orange {
+    color: #de935f;
+}
+
+.js-blue {
+    color: #19a3d1;
+}
+
+.skills,
+.courses {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.courses {
+    background-image: linear-gradient(#424642, #424642), linear-gradient(90deg, #424642 20px, transparent 20px, transparent 143px, #424642 143px), linear-gradient(#424642, #424642), linear-gradient(90deg, #424642 100%, transparent 25vw, transparent 40vw, #424642 40vw);
+    background-size: 2px 255px, 100% 2px, 2px 255px, 100% 2px;
+    background-position: 0 25px, 0px 25px, 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+.skills-list,
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    row-gap: 10px;
+}
+
+.skills-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 700;
+    justify-content: space-between;
+    
+}
+
+.courses-item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    row-gap: 10px;
+}
+
+.courses-desc,
+.courses-desc-year {
+    margin: 0;
+}
+
+.courses-desc-year {
+    background-color: #C06014;
+    width: 25%;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.courses-list {
+    row-gap: 30px;
+}
+
+.skills-desc {
+    margin: 0;
+}
+
+.progressbar-html { 
+	height: 20px;
+    width: 400px;
+	position: relative;
+	background: #555;
+	padding: 3px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.line-html {
+    width: 90%;
+}
+.progressbar-html > span {
+    display: block;
+    height: 100%;
+    background-color: #C06014;
+    background-image: linear-gradient(
+      center bottom,
+      #C06014 37%,
+      #C06014 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progressbar-css { 
+	height: 20px;
+    width: 400px;
+	position: relative;
+	background: #555;
+	padding: 3px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.line-css {
+    width: 80%;
+}
+.progressbar-css > span {
+    display: block;
+    height: 100%;
+    background-color: #C06014;
+    background-image: linear-gradient(
+      center bottom,
+      #C06014 37%,
+      #C06014 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progressbar-js { 
+	height: 20px;
+    width: 400px;
+	position: relative;
+	background: #555;
+	padding: 3px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.line-js {
+    width: 20%;
+}
+.progressbar-js > span {
+    display: block;
+    height: 100%;
+    background-color: #C06014;
+    background-image: linear-gradient(
+      center bottom,
+      #C06014 37%,
+      #C06014 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.progressbar-git { 
+	height: 20px;
+    width: 400px;
+	position: relative;
+	background: #555;
+	padding: 3px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.line-git {
+    width: 50%;
+}
+
+.progressbar-git > span {
+    display: block;
+    height: 100%;
+    background-color: #C06014;
+    background-image: linear-gradient(
+      center bottom,
+      #C06014 37%,
+      #C06014 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #424642;
+    align-items: center;
+}
+
+ .footer-gh {
+    padding-left: 48px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url(./assets/img/icon-github.png);
+    background-repeat: no-repeat;
+}
+
+.footer-link-gh {
+    text-decoration: none;
+    color: #ebebeb;
+}
+ 
+ .footer-year {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ebebeb;
+ }
