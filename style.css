@@ -609,13 +609,13 @@ pre {
     color: #ebebeb;
 }
  
- .footer-year {
+.footer-year {
     font-size: 24px;
     font-weight: 700;
     color: #ebebeb;
  }
 
- /* media */
+
 
 
  @media screen and (max-width: 1198px) {
@@ -640,11 +640,6 @@ pre {
 
 }
 
-@media screen and (max-width: 1196px) {
-
-    
-
-}
 
 @media screen and (max-width: 1170px) {
 
